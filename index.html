@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">How do you feel about Ibay?</h1>
+    <p id="description">Thank you for taking the time to help us improve for me</p>
+    <div class="container">
+      <form id="survey-form">
+        <label for="name" id="name-label">Name <input type="text" id="name" placeholder="Enter Your Name" required /> </label>
+        <label for="email" id="email-label">Email <input type="email" id="email" placeholder="Enter Your Email" required /> </label>
+        <label for="number" id="number-label">Age <input type="number" id="number" placeholder="How old are you?" min="15" max="30" required /> </label>
+        <p>What's not to like about ibay?</p>
+        <select name="dropdown" id="dropdown">
+          <option disabled selected value>Which One</option>
+          <option value="Egois">Egois</option>
+          <option value="Nyebelin">Nyebelin</option>
+          <option value="Banyak-Mau">Banyak Mau</option>
+        </select>
+        <p>What do you like about ibay?</p>
+        <label> <input name="user-recommend" value="ganteng" type="radio" class="input-radio" checked />Ganteng</label>
+        <label> <input name="user-recommend" value="manis" type="radio" class="input-radio" />Manis</label>
+
+        <label><input name="user-recommend" value="baik-hati" type="radio" class="input-radio" />Baik hati</label>
+
+        <p>What do you want to change from ibay?</p>
+        <label><input name="prefer" value="style" type="checkbox" class="input-checkbox" />Style</label>
+        <label><input name="prefer" value="rambut" type="checkbox" class="input-checkbox" />Rambut</label>
+        <label><input name="prefer" value="kendaraan" type="checkbox" class="input-checkbox" />Kendaraan</label>
+        <label><input name="prefer" value="sifat" type="checkbox" class="input-checkbox" />Sifat</label>
+
+        <p>Any comments or suggestions?</p>
+        <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+      </form>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
